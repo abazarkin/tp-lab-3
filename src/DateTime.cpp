@@ -32,6 +32,7 @@ string DateTime::getData(tm &date_time){
 	else
 		dat = "0" + to_string(date_time.tm_mday);
 	dat += " " + months[date_time.tm_mon] + " " + to_string(date_time.tm_year + 1900) + ", " + days[date_time.tm_wday];
+	return dat;
 }
 
 string DateTime::getPast(unsigned int N){
@@ -59,5 +60,5 @@ string DateTime::getTomorrow(){
 }
 
 int DateTime::getDifference(DateTime &dat){
-	return abs(mktime(&date_time) - mktime(&dat.date_time));
+	return abs(mktime(&date_time) - mktime(&dat.date_time)) / 86400;
 }
