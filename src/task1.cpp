@@ -5,7 +5,7 @@ double calcDelta(){
 	double rad = 6378100.0;
 	Circle rope(rad);
 	rope.setFerence(rope.getFerence() + 1.0);
-	return rope.getRadius - rad;
+	return rope.getRadius() - rad;
 }
 
 double calcCost(){
