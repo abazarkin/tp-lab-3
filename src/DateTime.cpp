@@ -31,7 +31,7 @@ string DateTime::getData(tm &date_time){
 		dat += to_string(date_time.tm_mday);
 	else
 		dat = "0" + to_string(date_time.tm_mday);
-	dat += " " + months[date_time.tm_mon] + " " + to_string(date_time.tm_year + 1900) + ", " + days[date_time.tm_wday];
+	dat += " " + months[date_time.tm_mon] + " " + to_string(date_time.tm_year) + ", " + days[date_time.tm_wday - 1];
 	return dat;
 }
 
