@@ -3,6 +3,7 @@
 #include <iostream>
 #include <ctime>
 #include <string>
+using namespace std;
 
 
 class DateTime{
@@ -10,7 +11,7 @@ class DateTime{
 		tm date_time;
 		static string months[],
 					  days[];
-		string getData(&tm);
+		string getData(tm&);
 	public:
 		DateTime(int, int, int);
 		DateTime();
