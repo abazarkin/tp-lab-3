@@ -21,7 +21,7 @@ DateTime::DateTime(){
 	cout << date_time.tm_wday;
 }
 
-DateTime::DateTime(const &DateTime cpy){
+DateTime::DateTime(const DateTime &cpy){
 	date_time = cpy.date_time;
 }
 
