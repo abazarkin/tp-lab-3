@@ -10,4 +10,5 @@ int main(){
 	cout << dat1.getTomorrow() << endl;
 	cout << dat1.getYesterday() << endl;
 	cout << dat1.getDifference(dat2) << endl;
+	return 0;
 }
